@@ -1,0 +1,37 @@
+.section__title {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.section__wrapper {
+  display: flow-root;
+  text-align: center;
+  font-size: 0;
+}
+
+.section__wrapper:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.section__img {
+  max-width: 100%;
+}
+
+.section__img_position_left {
+  float: left;
+  margin-right: 30px;
+}
+
+.section__img_position_right {
+  float: right;
+  margin-left: 40px;
+  margin-right: 0;
+}
+
+.section__img_indent_bottom {
+  margin-bottom: 30px;
+}
+
+

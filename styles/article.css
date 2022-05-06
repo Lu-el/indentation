@@ -1,0 +1,38 @@
+.article {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.article__navigation {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.article__footer {
+  padding: 25px 30px;
+  margin-top: 25px;
+}
+
+.article__content {
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.article__content:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.article__text_strong {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.article__text_emphasis {
+  font-style: italic;
+}
+
+.article__text_weight_normal {
+  font-weight: 400;
+}
