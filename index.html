@@ -23,8 +23,8 @@
       <h1 class="article__title">
         Отступы в вёрстке: <span lang="en">margin</span> и <span lang="en">padding</span>
       </h1>
-      <section class="article__section section">
-        <h2 class="section__title visually-hidden">Краткое описание статьи</h2>
+      <section class="section">
+        <h2 class="visually-hidden">Краткое описание статьи</h2>
         <p class="article__content">
           В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости
           вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую
@@ -38,58 +38,63 @@
           поговорим о фундаментальных основах работы с отступами в вёрстке.
         </p>
       </section>
-      <nav class="article__navigation navigation">
-        <h2 class="navigation__title">Содержание:</h2>
-        <ol class="navigation__list">
-          <li class="navigation__item">
-            <a href="#rule_1" class="navigation__link">
-              Отступ задается от предыдущего элемента к следующему
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="#rule_2" class="navigation__link">
-              Отступ задается последнему возможному элементу в DOM-дереве
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="#rule_3" class="navigation__link">
-              Для последнего элемента группы отступ обнуляется
-            </a>
-          </li>
-        </ol>
-      </nav>
 
-      <section class="article__section section" id="rule_1">
+      <section class="section section_theme_grey">
+        <h2 class="section__title section__title_size_xl">Содержание:</h2>
+        <nav class="article__navigation">
+          <ol class="section__list">
+            <li class="section__item">
+              <a href="#rule_1" class="section__link">
+                Отступ задается от предыдущего элемента к следующему
+              </a>
+            </li>
+            <li class="section__item">
+              <a href="#rule_2" class="section__link">
+                Отступ задается последнему возможному элементу в DOM-дереве
+              </a>
+            </li>
+            <li class="section__item">
+              <a href="#rule_3" class="section__link">
+                Для последнего элемента группы отступ обнуляется
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </section>
+
+      <section class="section" id="rule_1">
         <h3 class="section__title">
-          Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.
+          Отступ задается от предыдущего элемента к следующему: от первого ко второму,
+          сверху вниз, слева направо.
         </h3>
         <div class="section__wrapper">
           <img src="./image/rule_1/main_rule_margin.jpg" alt="Margin установлен снизу и справа"
             class="section__img section__img_position_left">
           <p class="article__content">
-            <strong class="article__text article__text_strong">ВАЖНО:</strong>
-            <em class="article__text article__text_emphasis" lang="en">margin</em> всегда
-            задают от предыдущего элемента к следующему.
+            <span class="text text_style_bold">ВАЖНО:</span>
+            <strong class="text">
+              <span class="text text_style_italic" lang="en">margin</span> всегда
+              задают от предыдущего элемента к следующему.
+            </strong>
           </p>
           <p class="article__content">
-            Свойство <em class="article__text article__text_emphasis" lang="en">margin</em> необходимо только для
+            Свойство <span class="text text_style_italic" lang="en">margin</span> необходимо только для
             того, чтобы отодвинуть
             своего соседа справа или снизу, поэтому
-            используется <em class="article__text article__text_emphasis" lang="en">margin-right и margin-bottom</em>.
+            используется <span class="text text_style_italic" lang="en">margin-right и margin-bottom</span>.
           </p>
           <p class="article__content">
-            <strong class="article__text article__text_weight_normal">(!)</strong> Свойства
-            <em class="article__text article__text_emphasis" lang="en">margin-left и margin-top</em>
-            используются крайне редко.
+            <strong class="text">(!) Свойства
+              <span class="text text_style_italic" lang="en">margin-left и margin-top</span>
+              используются крайне редко.
+            </strong>
           </p>
           <p class="article__content">
-            Для <em class="article__text article__text_emphasis" lang="en">padding</em> верно обратное. Исключением
+            Для <span class="text text_style_italic" lang="en">padding</span> верно обратное. Исключением
             является его
             применения в декоративных целях, например, для
             увеличения области ссылки.
           </p>
-
-
         </div>
 
         <div class="section__wrapper">
@@ -98,11 +103,11 @@
             class="section__img section__img_position_right">
           <p class="article__content">
             Отступ внутри блока сверху или слева реализуется через
-            <em class="article__text article__text_emphasis" lang="en">padding-top и padding-left</em> родителя.
+            <span class="text text_style_italic" lang="en">padding-top и padding-left</span> родителя.
           </p>
           <p class="article__content">
-            Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет
-            толкать сам себя.
+            Отступы, как правило, делают в направлении от предыдущего элемента к следующему.
+            Так элемент не будет толкать сам себя.
           </p>
           <p class="article__content">
             Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков
@@ -111,7 +116,7 @@
         </div>
       </section>
 
-      <section class="article__section section" id="rule_2">
+      <section class="section" id="rule_2">
         <h3 class="section__title">
           Отступ задается последнему возможному элементу в DOM-дереве
         </h3>
@@ -127,20 +132,22 @@
         <p class="article__content">
           Отступ делают за счёт соседних элементов, а не дочерних:
         </p>
-        <figure class="section__wrapper section__figure figure">
+        <figure class="section__wrapper figure">
           <img src="./image/rule_2/site_and_devtools_margin.jpg" alt="Ненумерованный список с элементами li"
             class="section__img figure__img">
           <figcaption class="figure__caption article__content">
-            <strong class="figure__text article__text article__text_strong">ВАЖНО:</strong> здесь
-            <em class="figure__text article__text article__text_emphasis">.list-item</em> — последний возможный элемент
-            в котором мы задаём
-            отступ, чтобы разделить списки.
+            <strong class="text">
+              <span class="text text_style_bold"> ВАЖНО: </span> здесь
+              <span class="text text_style_italic">.list-item</span> — последний возможный элемент
+              в котором мы задаём
+              отступ, чтобы разделить списки.
+            </strong>
           </figcaption>
         </figure>
         <p class="article__content">
           Казалось бы, можно задать отступ параграфу
-          <em class="article__text article__text_emphasis" lang="en">&lt;p&gt;</em>,
-          либо обёртке <em class="article__text article__text_emphasis" lang="en">&lt;article&gt;</em> для достижения
+          <span class="text text_style_italic" lang="en">&lt;p&gt;</span>,
+          либо обёртке <span class="text text_style_italic" lang="en">&lt;article&gt;</span> для достижения
           той же цели.
           Внешне останется все точно также, но так делать не рекомендуется.
         </p>
@@ -153,12 +160,12 @@
         </figure>
         <figure class="section__wrapper">
           <figcaption class="article__content">
-            В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <em
-              class="article__text article__text_emphasis" lang="en">section</em>. Именно для него
-            задается <em class="article__text article__text_emphasis" lang="en">padding-top</em>, а не <em
-              class="article__text article__text_emphasis" lang="en">div</em> с классом <em
-              class="article__text article__text_emphasis" lang="en">container</em>.
-            Свойства<em class="article__text article__text_emphasis" lang="en"> margin</em>, которые стоят по
+            В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span
+              class="text text_style_italic" lang="en">section</span>. Именно для него
+            задается <span class="text text_style_italic" lang="en">padding-top</span>, а не <span
+              class="text text_style_italic" lang="en">div</span> с классом <span class="text text_style_italic"
+              lang="en">container</span>.
+            Свойства<span class="text text_style_italic" lang="en"> margin</span>, которые стоят по
             умолчанию необходимо
             обнулить.
           </figcaption>
@@ -173,7 +180,7 @@
         </p>
       </section>
 
-      <section class="article__section section" id="rule_3">
+      <section class="section" id="rule_3">
         <h3 class="section__title">
           Для последнего элемента группы отступ всегда обнуляется
         </h3>
@@ -188,14 +195,13 @@
         </figure>
         <figure class="section__wrapper">
           <figcaption class="article__content">
-            В соответствии со вторым принципом: последний <em class="article__text article__text_emphasis"
-              lang="en">margin</em> обнуляется, а нижний отступ задаётся через <em
-              class="article__text article__text_emphasis" lang="en">padding</em> для
-            <em class="article__text article__text_emphasis" lang="en">section</em>. Я чаще всего задаю <em
-              class="article__text article__text_emphasis" lang="en">padding</em> для секции с обоих сторон, если
+            В соответствии со вторым принципом: последний <span class="text text_style_italic" lang="en">margin</span>
+            обнуляется, а нижний отступ задаётся через <span class="text text_style_italic" lang="en">padding</span> для
+            <span class="text text_style_italic" lang="en">section</span>. Я чаще всего задаю <span
+              class="text text_style_italic" lang="en">padding</span> для секции с обоих сторон, если
             расстояние между секциями 100px задаю
-            секциям <em class="article__text article__text_emphasis" lang="en">padding-top:50px</em> и <em
-              class="article__text article__text_emphasis" lang="en">padding-bottom:50px</em>.
+            секциям <span class="text text_style_italic" lang="en">padding-top:50px</span> и <span
+              class="text text_style_italic" lang="en">padding-bottom:50px</span>.
           </figcaption>
           <img src="./image/rule_3/margin_bottom.jpg"
             alt="Margin-bottom между элементами списка, кроме последнего элемента"
@@ -213,30 +219,38 @@
         </figure>
         <figure class="section__wrapper">
           <figcaption class="article__content">
-            Советую использовать псевдоклассы <em class="article__text article__text_emphasis"
-              lang="en">:last-child</em> чаще других, например так:
+            Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню
+            задаются так:
+          </figcaption>
+          <img src="./image/rule_3/margin_right.png" alt="Всем элементам списка задан margin-right 60px"
+            class="section__img">
+        </figure>
+        <figure class="section__wrapper">
+          <figcaption class="article__content">
+            Советую использовать псевдоклассы <span class="text text_style_italic" lang="en">:last-child</span> чаще
+            других, например так:
           </figcaption>
           <img src="./image/rule_3/last_child.png" alt="В css файле используются псевдоклассы last-child"
             class="section__img">
         </figure>
       </section>
 
-      <footer class="article__footer footer navigation">
-        <h2 class="footer__title navigation__title">Подытожим:</h2>
-        <ul class="footer__list navigation__list navigation__list_style_line">
-          <li class="navigation__item">
+      <footer class="section section_theme_grey">
+        <h2 class="section__title section__title_size_xl">Подытожим:</h2>
+        <ul class="section__list section__list_style_line">
+          <li class="section__item">
             отступы задаём от предыдущего элемента к следующему
           </li>
-          <li class="navigation__item">
+          <li class="section__item">
             используем только margin-right и margin-bottom
           </li>
-          <li class="navigation__item">
+          <li class="section__item">
             внешние отступы задаются только между соседями
           </li>
-          <li class="navigation__item">
+          <li class="section__item">
             внутренний отступ задаём самому верхнему элементу в дом дереве
           </li>
-          <li class="navigation__item">
+          <li class="section__item">
             последнему элементу группы отступ всегда обнуляем
           </li>
         </ul>

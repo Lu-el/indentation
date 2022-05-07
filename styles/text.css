@@ -1,0 +1,13 @@
+.text {
+  font-style: normal;
+  font-weight: 400;
+}
+
+.text_style_bold {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.text_style_italic {
+  font-style: italic;
+}

@@ -1,9 +1,9 @@
 @import './global.css';
 @import './normalize.css';
 @import './article.css';
-@import './navigation.css';
 @import './section.css';
 @import './figure.css';
+@import './text.css';
 
 @font-face {
   font-family: 'Roboto';
