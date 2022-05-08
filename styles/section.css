@@ -1,15 +1,17 @@
 .section_theme_grey {
   padding: 25px 45px;
-  margin-top: 25px;
-  margin-bottom: 25px;
   margin-left: -30px;
   margin-right: -30px;
   background-color: #F1F1F1;
   border-radius: 10px;
 }
 
-.section:last-child {
-  margin-bottom: 0;
+.section_indent_top {
+  padding-top: 50px;
+}
+
+.section_indent_bottom {
+  padding-bottom: 50px;
 }
 
 .section__title {
